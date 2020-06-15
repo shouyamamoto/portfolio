@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- スタイル -->
+    <link rel="stylesheet" href="styles/about_style/style.css">
+    <!-- スライド -->
+    <link rel="stylesheet" href="styles/swiper.css">
+    <!-- page.css -->
+    <link rel="stylesheet" href="styles/jquery.pagepiling.css">
+    <!-- フォント -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- モーダル -->
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- pade.js -->
+    <script src="scripts/jquery.pagepiling.min.js"></script>
+</head>
+<body>
+    <ul id="back">
+        <li><a href="index.html#page2">←</a></li>
+    </ul>
+    <ul id="menu" class="font-sm">
+        <li data-menuanchor="page1" class="active"><a href="#page1">ME</a></li>
+        <li data-menuanchor="page2"><a href="#page2">SKILL</a></li>
+        <li data-menuanchor="page3"><a href="#page3">OTHER</a></li>
+        <li data-menuanchor="page4"><a href="#page4">HOBBY</a></li>
+    </ul>
+
+<div id="pagepiling">
+    <div class="contents" id="section1">
+        <div class="about content-width">
+            <div class="bgtext-container">
+                <p class="bgtext">ME</p>
+            </div>
+            <div class="about-container">
+                <div class="img-container mb-sm">
+                    <img src="images/me.jpg" alt="" class="my-img">
+                </div>
+          
+                <div class="caption">
+                        <p class="about-me font-md pb-xs">山本 翔</p>
+                        <p class="about-me font-sm pb-sm">1996年生まれ 23歳 兵庫県姫路市出身</p>
+                        <p class="about-caption font-sm pb-xs">私は理学療法士として、「その人らしさ」をモットーに仕事に励んできました。</p>
+                        <p class="about-caption font-sm pb-xs">「その人らしさ」を実現するため、身体や精神に障害を持ってしまった患者様に寄り添ったヒアリングや治療を行ってきました。</p>
+                        <p class="about-caption font-sm pb-xs">加えて、家族様や担当医、看護師など、患者様を取り巻く方々との専門的視点を持った情報共有を行い、チーム一丸となって患者様が満足のいく状態で御退院していただけるよう努めてきました。</p>
+                        <p class="about-caption font-sm">これらの経験をいかし、クライアントに寄り添ったヒアリング・提案を行い、チームとしてニーズに答えられるようなデザイナーになりたいと思っています。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contents" id="section2">
+        <div class="skill content-width">
+            <div class="bgtext-container">
+                <p class="bgtext">SKILL</p>
+            </div>
+            <ul class="skill-list content-width">
+                <li class="skill-item">
+                    <a href="#html5" class="html5"><i class="fab fa-html5 fa-7x "></i></a>
+                    <div id="html5">
+                        <i class="fab fa-html5 fa-7x mb-sm"></i>
+                        <h3 class="font-lg pb-sm">HTML5</h3>
+                        <p>適切なタグ、見やすいインデント、明確なクラス名で修正しやすいよう記述するようにしています。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#css3" class="css3"><i class="fab fa-css3-alt fa-7x "></i></a>
+                    <div id="css3">
+                        <i class="fab fa-css3-alt fa-7x mb-sm"></i>
+                        <h3 class="font-lg pb-sm">CSS3</h3>
+                        <p>Sassと連携し、運用・拡張がしやすいような設計を心がけています。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#sass" class="sass"><i class="fab fa-sass fa-5x "></i></a>
+                    <div id="sass">
+                        <i class="fab fa-sass fa-7x mb-sm"></i>
+                        <h3 class="font-lg pb-sm">Sass</h3>
+                        <p>Sassを利用することで、cssのみの記述よりも素早く・性格な設計を行えます。<br>また、BEMマニュアルに沿った設計を心がけています。コンパイルにはVscodeのプラグインを使用しています。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#bootstrap" class="bootstrap"><img src="images/bootstrap.svg" alt="" class="fa-bootstrap "></a>
+                    <div id="bootstrap">
+                        <img src="images/bootstrap.svg" alt="" class="fa-bootstrap mb-sm">
+                        <h3 class="font-lg pb-sm">Bootstrap</h3>
+                        <p>ご要望があればBootstrapを用いた設計も可能です。<br>素早くデザイン、レスポンシブ対応が可能なので、プロトタイプを確認したい時にも使用することがあります。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#js" class="js"> <i class="fab fa-js fa-7x "></i></a>
+                    <div id="js">
+                        <i class="fab fa-js fa-7x mb-sm"></i>
+                        <h3 class="font-lg pb-sm">Javascript</h3>
+                        <p>jQueryで対応できない動きや複雑な動きが必要な場合には、javascriptで動きを実装します。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#jq" class="jq"><img src="images/jquery.svg" alt="" class="fa-jq "></a>
+                    <div id="jq">
+                        <img src="images/jquery.svg" alt="" class="fa-jq mb-sm">
+                        <h3 class="font-lg pb-sm">jQuery</h3>
+                        <p>jQueryを用いることでサイト上に様々な動きを加えることができます。<br>必要に応じてプラグインを用いることにより、javascriptよりも素早い機能実装が可能です。</p>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <a href="#ruby" class="ruby"><img src="images/ruby.svg" alt="" class="fa-ruby "></a>
+                    <div id="ruby">
+                        <img src="images/ruby.svg" alt="" class="fa-ruby mb-md">
+                        <h3 class="font-lg pb-sm">Ruby</h3>
+                        <p>Rubyを用いてログイン機能やお問い合わせ機能など、サーバーサイドでの動きの実装が可能です。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#rails" class="rails"><img src="images/rails.svg" alt="" class="fa-rails "></a>
+                    <div id="rails">
+                        <img src="images/rails.svg" alt="" class="fa-rails mb-md">
+                        <h3 class="font-lg pb-sm">Ruby on Rails</h3>
+                        <p>RubyのライブラリであるRuby on Railsを使用することでより素早く機能実装が可能です。</p>
+                    </div>
+                </li>
+    
+                <li class="skill-item">
+                    <a href="#git" class="git"><i class="fab fa-github-square fa-7x "></i></a>
+                    <div id="git">
+                        <i class="fab fa-github-square fa-7x mb-md"></i>
+                        <h3 class="font-lg pb-sm">Github</h3>
+                        <p>githubにてバージョン管理を行っています。複数人での開発は経験がありませんが、今後も学習を継続し,より保守性の高いコーディングを行ってまいります。</p>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <a href="#ps" class="ps"><img src="images/ps.svg" alt="" class="fa-ps "></a>
+                    <div id="ps">
+                        <img src="images/ps.svg" alt="" class="fa-ps mb-md">
+                        <h3 class="font-lg pb-sm">Photoshop</h3>
+                        <p>Photoshopを使用し、写真加工や切り抜き、バナー作成が可能です。また、デザインカンプを作成することもできます。</p>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <a href="#ai" class="ai"><img src="images/ai.svg" alt="" class="fa-ai "></a>
+                    <div id="ai">
+                        <img src="images/ai.svg" alt="" class="fa-ai mb-md">
+                        <h3 class="font-lg pb-sm">Illustrator</h3>
+                        <p>Illustratorを使用し、オブジェクトの作成やバナー作成が可能です。PhotoshopよりもIllustratorでのバナー作成が得意です。</p>
+                    </div>
+                </li>
+
+                <li class="skill-item">
+                    <a href="#vs" class="vs"><img src="images/vs.svg" alt="" class="fa-vs "></a>
+                    <div id="vs">
+                        <img src="images/vs.svg" alt="" class="fa-vs mb-md">
+                        <h3 class="font-lg pb-sm">Visual Studio Code</h3>
+                        <p>多彩なプラグインが導入されているVsCodeにてコーディングを行っています。補完機能も充実しており、より素早く、正確なコードを書くことができます。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contents pp-scrollable" id="section3">
+        <div class="bgtext-container">
+            <p class="bgtext">OTHER</p>
+        </div>
+        <div class="other content-width">
+            <h3 class="font-md pb-sm other-title">前職での勉強会の主催</h3>
+            <div class="other1-inner mb-lg">
+                <div class="other-img mb-sm">
+                    <img src="images/study-pic.jpg" alt="" class="other-img">
+                </div>
+                
+                <div class="other-text">
+                    <p class="font-sm pb-xs">勤務していた病院にて、治療技術の勉強会が少ないことに違和感を感じ、毎月6回業務後や休日に院外での勉強会に参加していました。
+                        そこで得た知識をアウトプットし、知識の定着化やコミュニケーション能力の向上、患者様への治療効果の貢献を図りました。<br>
+                        常に現状に満足せず、患者様がより良い状態で退院されるために職場での問題点を考えて計画・実行してきました。その結果、現状の課題の明確化、改善提案、実行力を身に着けることができました。
+                    </p>
+                </div>
+            </div>
+    
+            <h3 class="font-md pb-sm other-title">Qiita</h3>
+            <div class="other2-inner mb-sm">
+                <div class="other-img mb-sm">
+                    <img src="images/qiita.jpg" alt="" class="other-img">
+                </div>
+                
+                <div class="other-text">
+                    <p class="font-sm">アプリケーション開発を進めていく中で分からないことやつまづいたことがかなりあり、初心者の知識では理解できない記事が多数あるなと感じました。<br>
+                        私は学生時代から誰かに教えることが好きで、インプットした知識をアウトプットすることで知識定着を図っていました。
+                    </p>
+                </div>
+            </div>
+            <div class="link-container mb-lg">
+                <a href="https://qiita.com/syo19961113" class="qiita-link font-sm" target="_blank">Qiita<span class="arrow"><img src="images/arrow.png" alt=""></span></a>
+            </div>
+
+            
+
+            <h3 class="font-md pb-sm other-title">Note</h3>
+            <div class="other3-inner">
+                <div class="other-img mb-sm">
+                    <img src="images/note.jpg" alt="" class="other-img">
+                </div>
+                
+                <div class="other-text mb-sm">
+                    <p class="font-sm">
+                        デザインは感覚だけで行うものでなく、しっかりと意図やコンセプトを持っている必要があると考えています。
+                        noteでは、なぜそのデザインにしたのかを言語化することと、人に伝わりやすい表現や伝え方の練習をしています。
+                    </p>
+                </div>
+            </div>
+            <div class="link-container">
+                <a href="https://note.com/yamasyo1113" class="note-link font-sm" target="_blank">note<span class="arrow"><img src="images/arrow.png" alt=""></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="contents" id="section4">
+        <div class="hobby-container content-width">
+            <div class="bgtext-container">
+                <p class="bgtext">HOBBY</p>
+            </div>
+            <div class="photo-inner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/photo1.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo2.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo3.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo4.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo5.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo6.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo7.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo8.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo9.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo10.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo11.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo12.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo13.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo14.jpg" alt="" class="swiper-img"></div>
+                            <div class="swiper-slide"><img src="images/photo15.jpg" alt="" class="swiper-img"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+
+            <div class="text-container">
+                <p class="hobby-text font-sm mb-sm">
+                    写真を撮ることが趣味です。風景、人物、食べ物なんでも撮ります。依頼があればカップルフォトなども撮影しています。普段はinstagramに写真を投稿しています。
+                </p>
+    
+                <div class="link-container">
+                    <a href="https://www.instagram.com/ymsy_1113" class="insta-link font-sm" target="_blank">instagram<span class="arrow"><img src="images/arrow.png" alt=""></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/modaal.js"></script>
+    <script src="scripts/about_page.js"></script>
+</body>
+</html>

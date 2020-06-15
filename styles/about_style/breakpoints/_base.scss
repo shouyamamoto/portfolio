@@ -1,0 +1,476 @@
+// ユーティリティークラス
+.font-sm {
+    font-size: 12px;
+}
+
+.font-md {
+    font-size: 18px;
+}
+
+.font-lg {
+    font-size: 24px;
+}
+
+.font-lr {
+    font-size: 28px;
+}
+
+.pb-xs {
+    padding-bottom: 10px !important;
+}
+
+.pb-sm {
+    padding-bottom: 20px !important;
+}
+
+.pb-md {
+    padding-bottom: 30px !important;
+}
+
+.pb-lg {
+    padding-bottom: 50px !important;
+}
+
+.mb-sm {
+    margin-bottom: 20px !important;
+}
+
+.mb-md {
+    margin-bottom: 30px !important;
+}
+
+.mb-lg {
+    margin-bottom: 60px !important;
+}
+
+.content-width {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+// ユーティリティークラス終わり
+
+// 共通
+html body {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.fadein {
+    opacity: 0;
+    transform : translate(0, 100px);
+    transition : all 2500ms;
+}
+.fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+// 共通クラス終わり
+
+#back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #cfbc6b;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+
+    a {
+        color: rgba(255, 255, 255, 0.9);
+    }
+}
+#menu{
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+    a {
+        color: white;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: all 0.3s ease 0s;
+            transform: translateY(12px);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+// メニュー終わり
+
+// me
+#section1 {
+    overflow: hidden;
+    .bgtext-container {
+        position: fixed;
+        .bgtext {
+            font-size: 80px;
+            position: fixed;
+            bottom: -3%;
+            right: 0%;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .about {
+        color: rgba(255, 255, 255, 0.8);
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+
+        &-container {
+            .img-container {
+                text-align: center;
+                .my-img {
+                    width: 337.5px;
+                }
+            }
+        
+            .caption {
+                width: 337.5px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+// me終わり
+
+// スキル
+#section2 {
+    overflow: hidden;
+    .skill {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 40px 0;
+        
+    
+        .bgtext-container {
+            position: fixed;
+            .bgtext {
+                font-size: 80px;
+                position: fixed;
+                bottom: 0%;
+                right: 0%;
+                z-index: -1;
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+    
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            vertical-align: middle;
+            background-color: #fff;
+            padding: 30px 20px;
+    
+            a {
+                color: black;
+            }
+    
+            // モーダルウィンドウを隠す
+            .skill-item {
+                padding-bottom: 10px;
+                #html5,
+                #css3,
+                #sass,
+                #bootstrap,
+                #js,
+                #jq,
+                #ruby,
+                #rails,
+                #git,
+                #ps,
+                #ai,
+                #vs {
+                    display: none;
+                }
+            // モーダルウィンドウを隠す終わり
+    
+                .fa-html5 {
+                    color:#f16529;
+                    &::before {
+                        margin-left: 5px;
+                    }
+                }
+                .fa-css3-alt {
+                    color: #369CD6;
+                    &::before {
+                        margin-left: 10px;
+                    }
+                }
+                .fa-sass {
+                    color: #CD679A;
+                    line-height: 100px;
+                }
+                .fa-js {
+                    color: #FFDE00;
+                }
+                .fa-bootstrap {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-jq {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-ruby {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-rails {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-ps {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-ai {
+                    width: 98px;
+                    height: 112px;
+                }
+                .fa-vs {
+                    width: 98px;
+                    height: 112px;
+                }
+            }
+        }
+    }
+}
+// スキル終わり
+
+// その他
+#section3 {
+    color: rgba(255, 255, 255, 0.8);
+
+    .bgtext-container {
+        position: fixed;
+        .bgtext {
+            font-size: 80px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .other {
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+    
+        .other-img,
+        .other-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .other-text {
+            letter-spacing: 0.07em;
+            line-height: 1.8;
+        }
+    }
+
+    .link-container {
+        display: flex;
+        justify-content: flex-end;
+        width: 337.5px;
+        text-align: right;
+
+        .note-link,
+        .qiita-link{
+            color: white;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: white;
+                transition: all 0.3s ease 0s;
+                transform: translateY(12px);
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+
+            .arrow {
+                margin-left: 5px;
+            }
+        }
+
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+// その他終わり
+
+// 趣味
+#section4 {
+    overflow: hidden;
+    .bgtext-container {
+        text-align: center;
+        .bgtext {
+            font-size: 80px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.3);
+            -webkit-transform: rotate(90deg);
+            transform: rotate(0);
+        }
+    }
+    .hobby-container {
+        .photo-inner {
+            .swiper-container {
+                width: 337.5px;
+                margin-bottom: 40px;
+
+                .swiper-img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .hobby-text {
+        width: 337.5px;
+        color: rgba(255, 255, 255, 0.9);
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+    }
+
+    .link-container {
+        text-align: right;
+
+        .insta-link{
+            color: white;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: white;
+                transition: all 0.3s ease 0s;
+                transform: translateY(12px);
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+
+            .arrow {
+                margin-left: 5px;
+            }
+        }
+
+        span {
+            margin-left: 10px;
+        }
+    }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+    background-color: #cfbc6b;
+}
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+    color: white;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: white;
+}
+// 趣味終わり
+
+// モーダルウィンドウ内の設定
+.modaal-content-container {
+    .fa-html5 {
+        color:#f16529;
+        text-align: center;
+    }
+    .fa-css3-alt {
+        color: #369CD6;
+    }
+    .fa-sass {
+        color: #CD679A;
+    }
+    .fa-js {
+        color: #FFDE00;
+    }
+    .fa-bootstrap {
+        width: 80px;
+    }
+    .fa-jq {
+        width: 80px;
+    }
+    .fa-ruby {
+        width: 80px;
+    }
+    .fa-rails {
+        width: 80px;
+    }
+    .fa-ps {
+        width: 80px;
+    }
+    .fa-ai {
+        width: 80px;
+    }
+    .fa-vs {
+        width: 80px;
+    }
+}
+// モーダルウィンドウ内の設定終わり
+
+
+// セクションの背景色
+#section1{background: #1a3824;}
+#section2{background: #7b7934;}
+#section3{background: #96a679;}
+#section4{background: #cfbc6b;}

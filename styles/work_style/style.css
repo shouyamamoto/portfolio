@@ -1,0 +1,383 @@
+@charset "UTF-8";
+.font-sm {
+  font-size: 12px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-lg {
+  font-size: 24px;
+}
+
+.font-lr {
+  font-size: 28px;
+}
+
+.pb-xs {
+  padding-bottom: 10px !important;
+}
+
+.pb-sm {
+  padding-bottom: 20px !important;
+}
+
+.pb-md {
+  padding-bottom: 30px !important;
+}
+
+.pb-lg {
+  padding-bottom: 50px !important;
+}
+
+.mb-sm {
+  margin-bottom: 20px !important;
+}
+
+.mb-md {
+  margin-bottom: 30px !important;
+}
+
+.mb-lg {
+  margin-bottom: 60px !important;
+}
+
+.content-width {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+html body {
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #1a3824;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+  -webkit-transition: all 2500ms;
+  transition: all 2500ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #cfbc6b;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#back a {
+  color: #1a3824;
+}
+
+.work-container {
+  color: rgba(255, 255, 255, 0.9);
+  padding: 40px 0 40px 0;
+}
+
+.work-container .img-container {
+  background-color: #fff;
+}
+
+.work-container .copy {
+  text-align: center;
+}
+
+.kagu-container,
+.tekeloca-container,
+.oniken-container,
+.portfolio-container,
+.bnr_odai-container,
+.logo-container {
+  padding: 80px 0;
+  letter-spacing: 0.07em;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.kagu-container .title,
+.tekeloca-container .title,
+.oniken-container .title,
+.portfolio-container .title,
+.bnr_odai-container .title,
+.logo-container .title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kagu-container .work-img,
+.tekeloca-container .work-img,
+.oniken-container .work-img,
+.portfolio-container .work-img,
+.bnr_odai-container .work-img,
+.logo-container .work-img {
+  width: 90%;
+  margin: 80px 0 60px 0;
+}
+
+.kagu-container .table,
+.tekeloca-container .table,
+.oniken-container .table,
+.portfolio-container .table,
+.bnr_odai-container .table,
+.logo-container .table {
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.kagu-container .table td,
+.tekeloca-container .table td,
+.oniken-container .table td,
+.portfolio-container .table td,
+.bnr_odai-container .table td,
+.logo-container .table td {
+  padding-left: 10px;
+}
+
+.kagu-container .table a,
+.tekeloca-container .table a,
+.oniken-container .table a,
+.portfolio-container .table a,
+.bnr_odai-container .table a,
+.logo-container .table a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.kagu-container .table a::after,
+.tekeloca-container .table a::after,
+.oniken-container .table a::after,
+.portfolio-container .table a::after,
+.bnr_odai-container .table a::after,
+.logo-container .table a::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.kagu-container .table a:hover::after,
+.tekeloca-container .table a:hover::after,
+.oniken-container .table a:hover::after,
+.portfolio-container .table a:hover::after,
+.bnr_odai-container .table a:hover::after,
+.logo-container .table a:hover::after {
+  width: 100%;
+}
+
+.kagu-container .table a .arrow,
+.tekeloca-container .table a .arrow,
+.oniken-container .table a .arrow,
+.portfolio-container .table a .arrow,
+.bnr_odai-container .table a .arrow,
+.logo-container .table a .arrow {
+  margin-left: 5px;
+}
+
+.kagu-container .study-container,
+.tekeloca-container .study-container,
+.oniken-container .study-container,
+.portfolio-container .study-container,
+.bnr_odai-container .study-container,
+.logo-container .study-container {
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.kagu-container .link-container,
+.tekeloca-container .link-container,
+.oniken-container .link-container,
+.portfolio-container .link-container,
+.bnr_odai-container .link-container,
+.logo-container .link-container {
+  text-align: right;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.kagu-container .link-container .site-link,
+.kagu-container .link-container .git-link,
+.tekeloca-container .link-container .site-link,
+.tekeloca-container .link-container .git-link,
+.oniken-container .link-container .site-link,
+.oniken-container .link-container .git-link,
+.portfolio-container .link-container .site-link,
+.portfolio-container .link-container .git-link,
+.bnr_odai-container .link-container .site-link,
+.bnr_odai-container .link-container .git-link,
+.logo-container .link-container .site-link,
+.logo-container .link-container .git-link {
+  color: white;
+  position: relative;
+}
+
+.kagu-container .link-container .site-link::after,
+.kagu-container .link-container .git-link::after,
+.tekeloca-container .link-container .site-link::after,
+.tekeloca-container .link-container .git-link::after,
+.oniken-container .link-container .site-link::after,
+.oniken-container .link-container .git-link::after,
+.portfolio-container .link-container .site-link::after,
+.portfolio-container .link-container .git-link::after,
+.bnr_odai-container .link-container .site-link::after,
+.bnr_odai-container .link-container .git-link::after,
+.logo-container .link-container .site-link::after,
+.logo-container .link-container .git-link::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: white;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+.kagu-container .link-container .site-link:hover::after,
+.kagu-container .link-container .git-link:hover::after,
+.tekeloca-container .link-container .site-link:hover::after,
+.tekeloca-container .link-container .git-link:hover::after,
+.oniken-container .link-container .site-link:hover::after,
+.oniken-container .link-container .git-link:hover::after,
+.portfolio-container .link-container .site-link:hover::after,
+.portfolio-container .link-container .git-link:hover::after,
+.bnr_odai-container .link-container .site-link:hover::after,
+.bnr_odai-container .link-container .git-link:hover::after,
+.logo-container .link-container .site-link:hover::after,
+.logo-container .link-container .git-link:hover::after {
+  width: 100%;
+}
+
+.kagu-container .link-container .site-link .arrow,
+.kagu-container .link-container .git-link .arrow,
+.tekeloca-container .link-container .site-link .arrow,
+.tekeloca-container .link-container .git-link .arrow,
+.oniken-container .link-container .site-link .arrow,
+.oniken-container .link-container .git-link .arrow,
+.portfolio-container .link-container .site-link .arrow,
+.portfolio-container .link-container .git-link .arrow,
+.bnr_odai-container .link-container .site-link .arrow,
+.bnr_odai-container .link-container .git-link .arrow,
+.logo-container .link-container .site-link .arrow,
+.logo-container .link-container .git-link .arrow {
+  margin-left: 5px;
+}
+
+.kagu-container {
+  padding-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  .font-sm {
+    font-size: 14px;
+  }
+  #back {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+  }
+  .work-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .work-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-inner .img-container {
+    margin-right: 60px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .work-inner .img-container .work-img {
+    width: 80%;
+  }
+  .kagu-container h2,
+  .tekeloca-container h2,
+  .oniken-container h2,
+  .portfolio-container h2,
+  .bnr_odai-container h2,
+  .logo-container h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .font-sm {
+    font-size: 16px;
+  }
+  .work-container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .kagu-container,
+  .tekeloca-container,
+  .oniken-container,
+  .portfolio-container {
+    text-align: center;
+  }
+  .kagu-container .work-img,
+  .tekeloca-container .work-img,
+  .oniken-container .work-img,
+  .portfolio-container .work-img {
+    width: 70%;
+    margin-bottom: 60px;
+  }
+  .kagu-container .link-container .site-link .arrow,
+  .kagu-container .link-container .git-link .arrow,
+  .tekeloca-container .link-container .site-link .arrow,
+  .tekeloca-container .link-container .git-link .arrow,
+  .oniken-container .link-container .site-link .arrow,
+  .oniken-container .link-container .git-link .arrow,
+  .portfolio-container .link-container .site-link .arrow,
+  .portfolio-container .link-container .git-link .arrow {
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

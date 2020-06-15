@@ -1,0 +1,67 @@
+// メニュー
+#menu{
+    width: 40%;
+    margin: 32px;
+}
+// メニュー終わり
+
+// me
+#section1 {
+    .about {
+        &-container {
+            .img-container {
+                .my-img {
+                    width: 400px;
+                }
+            }
+            .caption {
+                width: 400px;
+            }
+        }
+    }
+}
+// me終わり
+
+// スキル
+#section2 {
+    .skill {
+        max-width: 500px;
+        .skill-list {
+            padding: 80px 30px;
+        }
+    }
+}
+// スキル終わり
+
+// その他
+#section3 {
+    .other {
+        max-width: 600px;
+    }
+
+    .link-container {
+        width: 600px;
+    }
+}
+// その他終わり
+
+// 趣味
+#section4 {
+    .hobby-container {
+        .photo-inner {
+            .swiper-container {
+                width: 600px;
+            }
+        }
+    }
+
+    .text-container {
+        margin: 0 auto;
+        width: 600px;
+        .hobby-text {
+            width: 600px;
+        }
+    }
+    
+}
+// 趣味終わり

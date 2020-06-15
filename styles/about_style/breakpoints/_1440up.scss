@@ -1,0 +1,114 @@
+.font-sm {
+    font-size: 16px;
+}
+
+.mb-lg {
+    margin-bottom: 120px !important;
+}
+
+// メニュー
+#menu{
+    width: 30%;
+}
+// メニュー終わり
+
+// me
+#section1 {
+    .about {
+        &-container {
+            .caption {
+                width: 700px;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+// me終わり
+
+// スキル
+#section2 {
+    .skill {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        .skill-list {
+            padding: 60px 100px;
+
+            .skill-item {
+                margin: 20px 40px;
+            }
+        }
+    }
+}
+// スキル終わり
+
+// その他
+#section3 {
+    .other {
+        max-width: 600px;
+        padding: 140px;
+
+        .other-title {
+            font-size: 28px;
+            margin-bottom: 32px;
+        }
+
+        .other1-inner {
+            display: flex;
+            width:  1000px;
+
+            .other-text {
+                width: 1000px;
+                margin-left: 60px;
+            }
+        }
+
+        .other2-inner {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 1000px;
+
+            .other-text {
+                width: 1000px;
+                margin-right: 60px;
+            }
+        }
+
+        .other3-inner {
+            display: flex;
+            width: 1000px;
+
+            .other-text {
+                width: 1000px;
+                margin-left: 60px;
+            }
+        }
+    }
+
+    .link-container {
+        width: 1000px;
+    }
+}
+// その他終わり
+
+// 趣味
+#section4 {
+    .hobby-container {
+        .photo-inner {
+            .swiper-container {
+                width: 800px;
+            }
+        }
+    }
+
+    .text-container {
+        margin: 0 auto;
+        width: 800px;
+        .hobby-text {
+            width: 800px;
+        }
+    }
+    
+}
+// 趣味終わり

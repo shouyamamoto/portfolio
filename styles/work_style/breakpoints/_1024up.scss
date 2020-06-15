@@ -1,0 +1,41 @@
+.font-sm {
+    font-size: 14px;
+}
+
+#back {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.work-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .img-container {
+        margin-right: 60px;
+        background-color: rgba(0,0,0,0);
+
+        .work-img {
+            width: 80%;
+        }
+    }
+}
+
+.kagu-container,
+.tekeloca-container,
+.oniken-container,
+.portfolio-container,
+.bnr_odai-container,
+.logo-container {
+    h2 {
+        font-size: 28px;
+    }
+}

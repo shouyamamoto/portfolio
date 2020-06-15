@@ -1,0 +1,189 @@
+.font-sm {
+    font-size: 14px;
+}
+
+// メニュー
+#menu{
+    width: 35%;
+}
+// メニュー終わり
+
+#sns {
+    display: inline-block;
+    position: fixed;
+    z-index: 9999;
+    
+    ul {
+        background-color: rgba(91, 118, 97, 1);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+        li {
+            padding: 0 24px;
+            margin-bottom: 24px;
+
+            a {
+                color: white;
+                display: inline-block;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background: white;
+                    transition: all 0.3s ease 0s;
+                    transform: translateY(12px);
+                }
+        
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// サイドバー終わり
+
+// top
+#section1 {
+    .fv-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .fv {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 768px;
+            height: 600px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 768px;
+            height: 600px;
+            background-color: rgba(6, 51, 25, 0.15);
+        }
+
+        .title-container {
+            position: absolute;
+            bottom: 160px;
+            left: 400px;
+
+            .title {
+                font-size: 80px;
+            }
+            .sub {
+                font-size: 16px;
+            }
+        }
+    }
+}
+// top終わり
+
+// about
+#section2 {
+    .about-container {
+        width: 100%;
+        max-width: 900px;
+        .bgtext-container {
+            .bgtext {
+                font-size: 240px;
+                bottom: 34%;
+                left: 10%;
+            }
+        }
+        .img-container {
+            display: inline-block;
+            width: 50%;
+            .me {
+                width: 80%;
+            }
+        }
+
+        .about-text {
+            display: inline-block;
+            width: 400px;
+        }
+    }
+}
+// about終わり
+
+// work
+#section3 {
+    .bgtext-container {
+        .bgtext {
+            font-size: 200px;
+            top: 60px;
+            left: 420px;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .work-container {
+        .work-inner {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .swiper-container {
+                width: 600px;
+            }
+
+            .work-text {
+                width: 600px;
+            }
+        }
+    }
+}
+// work終わり
+
+// contact
+#section4 {
+    .contact-container {
+        .bgtext-container {
+            .bgtext {
+                font-size: 180px;
+            }
+        }
+        
+        .contact-text-container {
+            width: 70%;
+            transform: translateX(60px);
+            text-align: center;
+            padding: 200px 0;
+        }
+    
+        .contact-us {
+            display: none;
+        }
+    
+        .copy {
+            position: absolute;
+            bottom: -20%;
+            left: 12%;
+            transform: translateX(0%);
+            text-align: center;
+            margin-top: 60px;
+            color: white;
+        }
+    }
+    
+}
+// contact終わり

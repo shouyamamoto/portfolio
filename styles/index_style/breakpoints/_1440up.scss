@@ -1,0 +1,116 @@
+.font-sm {
+    font-size: 16px;
+}
+
+// メニュー
+#menu{
+    width: 30%;
+}
+// メニュー終わり
+
+// top
+#section1 {
+    .fv-container {
+        .fv {
+            width: 1024px;
+            height: 700px;
+        }
+
+        &::after {
+            width: 1024px;
+            height: 700px;
+        }
+
+        .title-container {
+            position: absolute;
+            bottom: 200px;
+            left: 500px;
+
+            .title {
+                font-size: 120px;
+            }
+            .sub {
+                font-size: 20px;
+                width: 600px;
+            }
+        }
+    }
+}
+// top終わり
+
+// about
+#section2 {
+    .about-container {
+        width: 100%;
+        max-width: 900px;
+        .bgtext-container {
+            .bgtext {
+                font-size: 280px;
+                bottom: 34%;
+                left: 18%;
+            }
+        }
+        .img-container {
+            display: inline-block;
+            width: 50%;
+            margin-right: 40px;
+            .me {
+                width: 100%;
+            }
+        }
+
+        .about-text {
+            display: inline-block;
+            width: 400px;
+        }
+
+        .link-container {
+            padding-top: 70px;
+        }
+    }
+}
+// about終わり
+
+// work
+#section3 {
+    .bgtext-container {
+        .bgtext {
+            font-size: 220px;
+            bottom: -380px;
+            right: 160px;
+            transform: rotate(90deg);
+        }
+    }
+
+    .work-container {
+        .work-inner {
+            top: 50%;
+            left: 55%;
+            .swiper-container {
+                width: 1000px;
+            }
+
+            .work-text {
+                width: 1000px;
+            }
+        }
+    }
+}
+// work終わり
+
+// contact
+#section4 {
+    .contact-container {
+        .copy {
+            position: absolute;
+            bottom: -30%;
+            left: 55%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-top: 60px;
+            color:white;
+        }
+    }
+    
+}
+// contact終わり

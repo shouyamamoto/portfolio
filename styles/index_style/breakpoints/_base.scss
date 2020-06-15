@@ -1,0 +1,360 @@
+// ユーティリティークラス
+.font-sm {
+    font-size: 12px;
+}
+
+.font-md {
+    font-size: 18px;
+}
+
+.font-lg {
+    font-size: 24px;
+}
+
+.font-lr {
+    font-size: 28px;
+}
+
+.pb-xs {
+    padding-bottom: 10px !important;
+}
+
+.pb-sm {
+    padding-bottom: 20px !important;
+}
+
+.pb-md {
+    padding-bottom: 30px !important;
+}
+
+.pb-lg {
+    padding-bottom: 50px !important;
+}
+
+.mb-sm {
+    margin-bottom: 20px !important;
+}
+
+.mb-md {
+    margin-bottom: 30px !important;
+}
+
+.mb-lg {
+    margin-bottom: 60px !important;
+}
+
+.content-width {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+// ユーティリティークラス終わり
+
+// 共通
+html body {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fadein {
+    opacity: 0;
+    transform : translate(0, 100px);
+    transition : all 2500ms;
+}
+.fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+// 共通クラス終わり
+
+#menu{
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+    a {
+        color: white;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: white;
+            transition: all 0.3s ease 0s;
+            transform: translateY(12px);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
+// メニュー終わり
+
+#sns {
+    display: none;
+}
+
+// top
+#section1 {
+    .fv-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+        .fv {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(6, 51, 25, 0.15);
+        }
+
+        .title-container {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+
+            .title {
+                font-size: 80px;
+                color: white;
+                letter-spacing: 0.05em;
+                font-family: 'The Redlight Free';
+            }
+            .sub {
+                margin-top: 14px;
+                font-size: 16px;
+                color: white;
+                letter-spacing: 0.05em;
+                width: 280px;
+            }
+        }
+    }
+}
+// top終わり
+
+// about
+#section2 {
+    overflow: hidden;
+    .bgtext-container {
+        .bgtext {
+            font-size: 120px;
+            position: fixed;
+            bottom: 20%;
+            left: -5%;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.1);
+            transform: rotate(90deg);
+        }
+    }
+    .img-container {
+        display: inline-block;
+        .me {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .about-text {
+        display: inline-block;
+        color: white;
+        width: 375px;
+        letter-spacing: 0.05em;
+        line-height: 1.5;
+
+        .about-caption {
+            width: 337.5px;
+        }
+
+        .link-container {
+            text-align: right;
+            width: 337.5px;
+
+            .about-link {
+                color: white;
+                position: relative;
+    
+                &::after {
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background: white;
+                    transition: all 0.3s ease 0s;
+                    transform: translateY(12px);
+                }
+        
+                &:hover::after {
+                    width: 100%;
+                }
+    
+                .arrow {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+// about終わり
+
+// work
+#section3 {
+    overflow: hidden;
+    .bgtext-container {
+        .bgtext {
+            font-size: 120px;
+            position: fixed;
+            top: 150px;
+            left: 40px;
+            z-index: -1;
+            color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .work-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+        .work-inner {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+
+            .site-title {
+                color: white;
+            }
+
+            .swiper-container {
+                width: 337.5px;
+                overflow: hidden;
+                margin-bottom: 40px;
+
+                .swiper-img {
+                    width: 100%;
+                    height: auto;
+                    transition: all 0.7s;
+                
+                    &:hover {
+                        transform: scale(1.06, 1.06);
+                    }
+                }
+            }
+
+            .work-text {
+                width: 337.5px;
+                color: white;
+                letter-spacing: 0.05em;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 4px;
+        background-color: #cfbc6b;
+    }
+}
+// work終わり
+
+// contact
+#section4 {
+    overflow: hidden;
+    .contact-container {
+        position: relative;
+        // height: 100vh;
+        .bgtext-container {
+            .bgtext {
+                font-size: 150px;
+                position: fixed;
+                top: 310px;
+                left: -170px;
+                z-index: -1;
+                color: rgba(255, 255, 255, 0.1);
+                transform: rotate(74deg);
+            }
+        }
+        
+        .contact-text-container {
+            background-color: white;
+            padding: 100px 0;
+            width: 90%;
+    
+            .contact-text {
+                padding: 0px 20px;
+                letter-spacing: 0.05em;
+                line-height: 1.5;
+            }
+        }
+    
+        .contact-us {
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            .contact-link {
+                color: white;
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+            }
+        }
+    
+        .copy {
+            position: absolute;
+            bottom: -60%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-top: 60px;
+            color:white;
+        }
+    }
+    
+}
+// contact終わり
+
+
+#section1{background: #1a3824;}
+#section2{background: #7b7934;}
+#section3{background: #96a679;}
+#section4{background: #cfbc6b;}

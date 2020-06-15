@@ -1,0 +1,209 @@
+// ユーティリティークラス
+.font-sm {
+    font-size: 12px;
+}
+
+.font-md {
+    font-size: 18px;
+}
+
+.font-lg {
+    font-size: 24px;
+}
+
+.font-lr {
+    font-size: 28px;
+}
+
+.pb-xs {
+    padding-bottom: 10px !important;
+}
+
+.pb-sm {
+    padding-bottom: 20px !important;
+}
+
+.pb-md {
+    padding-bottom: 30px !important;
+}
+
+.pb-lg {
+    padding-bottom: 50px !important;
+}
+
+.mb-sm {
+    margin-bottom: 20px !important;
+}
+
+.mb-md {
+    margin-bottom: 30px !important;
+}
+
+.mb-lg {
+    margin-bottom: 60px !important;
+}
+
+.content-width {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+// ユーティリティークラス終わり
+
+// 共通
+html body {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #1a3824;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fadein {
+    opacity: 0;
+    transform : translate(0, 100px);
+    transition : all 2500ms;
+}
+.fadein.scrollin{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+// 共通クラス終わり
+
+#back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #cfbc6b;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+
+    a {
+        color: #1a3824;
+    }
+}
+
+
+.work-container {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 40px 0 40px 0;
+
+    .img-container {
+        background-color: #fff;
+    }
+
+    .copy {
+        text-align: center;
+    }
+}
+
+.kagu-container,
+.tekeloca-container,
+.oniken-container,
+.portfolio-container,
+.bnr_odai-container,
+.logo-container {
+    padding: 80px 0;
+    letter-spacing: 0.07em;
+    line-height: 1.8;
+    text-align: center;
+
+    .title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .work-img {
+        width: 90%;
+        margin: 80px 0 60px 0;
+    }
+
+    .table {
+        width: 90%;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 20px;
+        td {
+           padding-left: 10px;
+        }
+        a {
+            position: relative;
+            color: rgba(255, 255, 255, 0.9);
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: white;
+                transition: all 0.3s ease 0s;
+                transform: translateY(3px);
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+
+            .arrow {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .study-container {
+        text-align: justify;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .link-container {
+        text-align: right;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+
+        .site-link,
+        .git-link {
+            color: white;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: white;
+                transition: all 0.3s ease 0s;
+                transform: translateY(8px);
+            }
+    
+            &:hover::after {
+                width: 100%;
+            }
+
+            .arrow {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.kagu-container {
+    padding-top: 20px;
+}
